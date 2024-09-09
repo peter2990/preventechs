@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrevenTech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PrevenTech</h1>
+        <nav>
+            <a href="#home">Inicio</a>
+            <a href="#features">Características</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Bienvenido a PrevenTech</h2>
+        <p>La solución completa para el mantenimiento preventivo de equipos.</p>
+        <div class="iframe-container">
+            <!-- Incrusta tu aplicación aquí -->
+            <iframe src="https://nombre-de-tu-aplicacion.herokuapp.com/" width="100%" height="800px" style="border:none;" title="PrevenTech"></iframe>
+        </div>
+    </section>
+    
+    <section id="features">
+        <h2>Características</h2>
+        <ul>
+            <li>Gestión de usuarios por niveles (gerentes y técnicos)</li>
+            <li>Órdenes de trabajo diarias y mensuales</li>
+            <li>Calendario de órdenes de trabajo</li>
+            <li>Inicio y parada de órdenes de trabajo</li>
+            <li>Hora de inicio y finalización de órdenes</li>
+            <li>Lista de equipos por áreas</li>
+            <li>Agregar y eliminar órdenes de trabajo</li>
+            <li>Subir y tomar fotos</li>
+            <li>Solicitar trabajo por usuario</li>
+            <li>Productividad por técnico y del departamento mensual</li>
+            <li>Generación de reportes en PDF</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 PrevenTech. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
